@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retângulo ou Quadrado</title>
+</head>
+<body>
+    <h1>Calcular área de uma figura</h1>
+    <p>
+        Base: <input type="text" value="0" id="base">
+    </p>
+    <p>
+        Altura: <input type="text" value="0" id="altura">
+    </p>
+    <p>
+        <input type="button" value="Calcular Area" id="btCalcular">
+    </p>
+    <div id="result"></div>
+    <div id="figura"></div>
+
+    <script>
+        btCalcular.addEventListener("click", calcular);
+        function calcular() {
+            result.innerHTML = ''
+            figura.innerHTML = ''
+            if (parseFloat(base.value) == parseFloat(altura.value)){
+                result.innerHTML = "<h3>Área do quadrado: " + (parseFloat(base.value) * parseFloat(altura.value)) + "</h3>";
+                figura.innerHTML = '<img src="./img/Quadrado.png">';
+            }
+            else{
+                result.innerHTML = "<h3>Área do retângulo: " + (parseFloat(base.value) * parseFloat(altura.value)) + "</h3>";
+                figura.innerHTML = '<img src="./img/Retangulo.png">';
+            }
+        }
+    </script>
+</body>
+</html>
