@@ -12,17 +12,13 @@
     <p>
         Numero: <input type="text" value="0" id="numero">
     </p>
-
     <p>
         <input type="button" value="Calcular Fatorial" id="btCalcular">
     </p>
     <div id="result"></div>
 
     <script>
-        
-        
         btCalcular.addEventListener("click", fatorial);
-
         function fatorial() {
             var num = parseInt(numero.value);
             var resultado = 1;
@@ -30,12 +26,10 @@
                 result.innerHTML = "fatorial = 1";
                 return;
             }
-
             for (var i = num; i > 1; i--) {
                 resultado *= i;
             }
             result.innerHTML = "fatorial = " + resultado;
-            
         }
     </script>
 </body>

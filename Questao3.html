@@ -12,30 +12,28 @@
     <input type="text" value="Número da fruta" id="txtNumFruta">
     <input type="button" value="selecionar" id="btSelecionar">
     <div id="foto"></div>
-    
+
     <script>
         btOpcoes.addEventListener('click', mostrar);
         btSelecionar.addEventListener('click', selecionar)
         
         btSelecionar.style.visibility = 'hidden';
         txtNumFruta.style.visibility = 'hidden';
+
         var frutas = new Array("Abacaxi","Banana","Goiaba","Manga","Maçã","Uva");
 
         function mostrar(){
             for (var i = 0; i < frutas.length; i++)
+
                 opcoes.innerHTML += i + " - " + frutas[i] + "<br>";
 
                 btSelecionar.style.visibility = 'visible';
                 txtNumFruta.style.visibility = 'visible';
             }
-        
         function selecionar(){
             var numero = parseInt(txtNumFruta.value)
             foto.innerHTML = '<img src="./img/fruta_' + numero + '.png">';
         }
-
-
     </script>
-    
 </body>
 </html>
