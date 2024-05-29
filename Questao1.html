@@ -24,11 +24,13 @@
         function calcular() {
             result.innerHTML = ''
             figura.innerHTML = ''
-            if (parseFloat(base.value) == parseFloat(altura.value)){
+            if(parseFloat(base.value) == 0 || parseFloat(altura.value) == 0)
+                alert("Digite um número diferente de zero")
+            else if (parseFloat(base.value) == parseFloat(altura.value)){
                 result.innerHTML = "<h3>Área do quadrado: " + (parseFloat(base.value) * parseFloat(altura.value)) + "</h3>";
                 figura.innerHTML = '<img src="./img/Quadrado.png">';
             }
-            else{
+            else {
                 result.innerHTML = "<h3>Área do retângulo: " + (parseFloat(base.value) * parseFloat(altura.value)) + "</h3>";
                 figura.innerHTML = '<img src="./img/Retangulo.png">';
             }

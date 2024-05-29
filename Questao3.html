@@ -11,7 +11,7 @@
     <div id="opcoes"></div>
     <input type="text" value="Número da fruta" id="txtNumFruta">
     <input type="button" value="selecionar" id="btSelecionar">
-    <div id="foto"></div>
+    <center><div id="foto"></div></center>
 
     <script>
         btOpcoes.addEventListener('click', mostrar);
@@ -32,7 +32,14 @@
             }
         function selecionar(){
             var numero = parseInt(txtNumFruta.value)
-            foto.innerHTML = '<img src="./img/fruta_' + numero + '.png">';
+            if (numero > 6 || numero < 0)
+                alert("Digite um número válido e que corresponda a uma das frutas")
+            else
+                foto.innerHTML = '<img src="./img/fruta_' + numero + '.png">';
+
+            foto.style.margin = '2px';
+            foto.style.padding = '10px';
+            foto.style.backgroundColor = 'rgb(176, 224, 230)';
         }
     </script>
 </body>
