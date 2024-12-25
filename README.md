@@ -1,4 +1,4 @@
-# 2° Atividade da disciplina Eletiva-Programacao de Scripts da faculdade
+# 2° Atividade da disciplina Programação de Scripts da faculdade
 
 Para essa atividade o professor Cláudio Luís Vieira Oliveira propos o seguinte:
 
