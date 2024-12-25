@@ -1,5 +1,7 @@
 # 2° Atividade da disciplina Eletiva-Programacao de Scripts da faculdade
 
+Para essa atividade o professor Cláudio Luís Vieira Oliveira propos o seguinte:
+
 **Resolver os exercícios a seguir utilizando HTML e JavaScript e aplicando o conceito de formulários:**
 
 1. A partir dos lados de um retângulo ou quadrado, digitados pelo usuário em um formulário, elaborar uma página Web que calcule e exiba o valor da área da figura e informe se é um retângulo ou um quadrado, exibindo uma imagem que represente a respectiva figura geométrica. Lembrando que a área é obtida pela multiplicação da base (L) pela altura (A).
